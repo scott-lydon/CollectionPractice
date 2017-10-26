@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ACB06BB21FA156B00033C673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06BB11FA156B00033C673 /* AppDelegate.swift */; };
-		ACB06BB41FA156B00033C673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06BB31FA156B00033C673 /* ViewController.swift */; };
 		ACB06BB71FA156B00033C673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB06BB51FA156B00033C673 /* Main.storyboard */; };
 		ACB06BBA1FA156B00033C673 /* CollectionViewPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACB06BB81FA156B00033C673 /* CollectionViewPractice.xcdatamodeld */; };
 		ACB06BBC1FA156B00033C673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB06BBB1FA156B00033C673 /* Assets.xcassets */; };
 		ACB06BBF1FA156B00033C673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB06BBD1FA156B00033C673 /* LaunchScreen.storyboard */; };
 		ACB06BCA1FA156B10033C673 /* CollectionViewPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06BC91FA156B10033C673 /* CollectionViewPracticeTests.swift */; };
 		ACB06BD51FA156B10033C673 /* CollectionViewPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06BD41FA156B10033C673 /* CollectionViewPracticeUITests.swift */; };
+		ACB06C021FA15EED0033C673 /* BurgerCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06C011FA15EED0033C673 /* BurgerCVC.swift */; };
+		ACB06C041FA160190033C673 /* BurgerUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06C031FA160190033C673 /* BurgerUICell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		ACB06BAE1FA156B00033C673 /* CollectionViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB06BB11FA156B00033C673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACB06BB31FA156B00033C673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACB06BB61FA156B00033C673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACB06BB91FA156B00033C673 /* CollectionViewPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionViewPractice.xcdatamodel; sourceTree = "<group>"; };
 		ACB06BBB1FA156B00033C673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		ACB06BD01FA156B10033C673 /* CollectionViewPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB06BD41FA156B10033C673 /* CollectionViewPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPracticeUITests.swift; sourceTree = "<group>"; };
 		ACB06BD61FA156B10033C673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB06C011FA15EED0033C673 /* BurgerCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerCVC.swift; sourceTree = "<group>"; };
+		ACB06C031FA160190033C673 /* BurgerUICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerUICell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				ACB06BB11FA156B00033C673 /* AppDelegate.swift */,
-				ACB06BB31FA156B00033C673 /* ViewController.swift */,
 				ACB06BB51FA156B00033C673 /* Main.storyboard */,
+				ACB06C031FA160190033C673 /* BurgerUICell.swift */,
+				ACB06C011FA15EED0033C673 /* BurgerCVC.swift */,
 				ACB06BBB1FA156B00033C673 /* Assets.xcassets */,
 				ACB06BBD1FA156B00033C673 /* LaunchScreen.storyboard */,
 				ACB06BC01FA156B00033C673 /* Info.plist */,
@@ -265,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB06BB41FA156B00033C673 /* ViewController.swift in Sources */,
+				ACB06C041FA160190033C673 /* BurgerUICell.swift in Sources */,
+				ACB06C021FA15EED0033C673 /* BurgerCVC.swift in Sources */,
 				ACB06BBA1FA156B00033C673 /* CollectionViewPractice.xcdatamodeld in Sources */,
 				ACB06BB21FA156B00033C673 /* AppDelegate.swift in Sources */,
 			);
@@ -520,6 +524,7 @@
 				ACB06BDB1FA156B10033C673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB06BDC1FA156B10033C673 /* Build configuration list for PBXNativeTarget "CollectionViewPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				ACB06BDE1FA156B10033C673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACB06BDF1FA156B10033C673 /* Build configuration list for PBXNativeTarget "CollectionViewPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				ACB06BE11FA156B10033C673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
